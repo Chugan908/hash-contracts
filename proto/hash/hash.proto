@@ -6,7 +6,6 @@ option go_package = "hash-service/hashv1";
 
 service Hash { 
     rpc HashUrl (HashUrlRequest) returns (HashUrlResponse);
-    rpc UnHashUrl (UnHashUrlRequest) returns (UnHashUrlResponse);
 }
 
 message HashUrlRequest {
@@ -15,12 +14,4 @@ message HashUrlRequest {
 
 message HashUrlResponse {
     string texthash_url = 1;
-}
-
-message UnHashUrlRequest {
-    string texthashurl = 1;
-}
-
-message UnHashUrlResponse {
-    string text_url = 1;
 }
