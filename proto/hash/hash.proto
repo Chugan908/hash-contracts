@@ -15,3 +15,11 @@ message HashUrlRequest {
 message HashUrlResponse {
     string texthash_url = 1;
 }
+
+message UnHashUrlRequest {
+    string hashed_text_url = 1;
+}
+
+message UnHashUrlResponse {
+    string text_url = 1;
+}
